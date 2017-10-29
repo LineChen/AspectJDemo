@@ -50,7 +50,6 @@ dependencies {
     compile project(':aspectj')
 }
 
-
 final def log = project.logger
 final def variants = project.android.applicationVariants
 //在构建工程时，执行编织

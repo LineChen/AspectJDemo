@@ -1,8 +1,12 @@
 package com.line.aspectjdemo;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.Toast;
+
+import com.line.aspectj.ClickAnnotation;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,4 +28,8 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
     }
 
+    @ClickAnnotation(declaredName = "collection_count")
+    public void collection(View view) {
+        Toast.makeText(this, "collection", Toast.LENGTH_SHORT).show();
+    }
 }
