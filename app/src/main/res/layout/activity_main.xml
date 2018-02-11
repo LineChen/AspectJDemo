@@ -4,12 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.line.aspectjdemo.MainActivity">
+    tools:context="com.line.aspectjdemo.MainActivity"
+    android:orientation="vertical">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="埋点测试"
         android:onClick="collection"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更换地址"
+        android:onClick="changeUrl"/>
+
 
 </LinearLayout>
